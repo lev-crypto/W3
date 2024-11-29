@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+.week {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 530px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.week span {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.week span.active {
+  opacity: 1;
+  font-weight: bold;
+  color: #9900ff;
+}
+
+.clock {
+  text-align: center;
+}
+
+.time {
+  font-size: 18rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
